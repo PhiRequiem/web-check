@@ -17,7 +17,7 @@ code {
 
 
 ::selection {
-  background: var(--primary, #9fef00);
+  background: var(--primary, #5c116b);
   color: var(--background, #470954);
 }
 
