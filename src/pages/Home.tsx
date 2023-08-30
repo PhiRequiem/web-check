@@ -8,7 +8,7 @@ import Button from 'components/Form/Button';
 import { StyledCard } from 'components/Form/Card';
 import Footer from 'components/misc/Footer';
 
-import docs from 'utils/docs';
+// import docs from 'utils/docs';
 import colors from 'styles/colors';
 import { determineAddressType } from 'utils/address-type-checker';
 
