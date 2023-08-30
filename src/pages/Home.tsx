@@ -5,7 +5,7 @@ import { useNavigate, NavigateOptions } from 'react-router-dom';
 import Heading from 'components/Form/Heading';
 import Input from 'components/Form/Input'
 import Button from 'components/Form/Button';
-import { StyledCard } from 'components/Form/Card';
+// import { StyledCard } from 'components/Form/Card';
 import Footer from 'components/misc/Footer';
 
 // import docs from 'utils/docs';
