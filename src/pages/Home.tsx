@@ -51,47 +51,47 @@ const ErrorMessage = styled.p`
   margin: 0.5rem;
 `;
 
-const SiteFeaturesWrapper = styled(StyledCard)`
-  margin: 1rem;
-  width: calc(100% - 2rem);
-  max-width: 50rem;
-  z-index: 2;
-  .links {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    a {
-      width: 100%;
-      button {
-        width: calc(100% - 2rem);
-      }
-    }
-    @media(max-width: 600px) {
-      flex-wrap: wrap;
-    }
-  }
-  ul {
-    -webkit-column-width: 150px;
-    -moz-column-width: 150px;
-    column-width: 150px;
-    list-style: none;
-    padding: 0 1rem;
-    font-size: 0.9rem;
-    li {
-      margin: 0.1rem 0;
-      text-indent: -1.2rem;
-      break-inside: avoid-column;
-    }
-    li:before {
-      content: '✓';
-      color: ${colors.primary};
-      margin-right: 0.5rem;
-    }
-  }
-  a {
-    color: ${colors.primary};
-  }
-`;
+// const SiteFeaturesWrapper = styled(StyledCard)`
+//   margin: 1rem;
+//   width: calc(100% - 2rem);
+//   max-width: 50rem;
+//   z-index: 2;
+//   .links {
+//     display: flex;
+//     justify-content: center;
+//     gap: 0.5rem;
+//     a {
+//       width: 100%;
+//       button {
+//         width: calc(100% - 2rem);
+//       }
+//     }
+//     @media(max-width: 600px) {
+//       flex-wrap: wrap;
+//     }
+//   }
+//   ul {
+//     -webkit-column-width: 150px;
+//     -moz-column-width: 150px;
+//     column-width: 150px;
+//     list-style: none;
+//     padding: 0 1rem;
+//     font-size: 0.9rem;
+//     li {
+//       margin: 0.1rem 0;
+//       text-indent: -1.2rem;
+//       break-inside: avoid-column;
+//     }
+//     li:before {
+//       content: '✓';
+//       color: ${colors.primary};
+//       margin-right: 0.5rem;
+//     }
+//   }
+//   a {
+//     color: ${colors.primary};
+//   }
+// `;
 
 const Home = (): JSX.Element => {
   const defaultPlaceholder = 'ej. https://segudigital.org';
