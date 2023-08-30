@@ -171,7 +171,7 @@ const Home = (): JSX.Element => {
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
         <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>!Chequea mi web!</Button>
       </UserInputMain>
-      <SiteFeaturesWrapper>
+      {/* <SiteFeaturesWrapper>
         <div className="features">
           <Heading as="h2" size="small" color={colors.primary}>Estas son las revisiones que haremos 🤓</Heading>
           <ul>
@@ -179,7 +179,7 @@ const Home = (): JSX.Element => {
             <li><a href="/about">+ more!</a></li>
           </ul>
         </div>
-        {/* <div className="links">
+        <div className="links">
           <a href="https://github.com/lissy93/web-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
             <Button>VerGitHub</Button>
           </a>
@@ -189,8 +189,8 @@ const Home = (): JSX.Element => {
           <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
             <Button>API Docs</Button>
           </a>
-        </div> */}
-      </SiteFeaturesWrapper>
+        </div>
+      </SiteFeaturesWrapper> */}
       <Footer isFixed={true} />
     </HomeContainer>
   );

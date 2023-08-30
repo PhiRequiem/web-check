@@ -48,7 +48,7 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
     </span>
     <span>
       {/* <Link href="/about">Este proyecto</Link> es un derivado de web-check de <Link href={authorUrl}>Alicia Sykes</Link> */}
-      Basado en el proyecto <Link href={authorUrl}>Alicia Sykes</Link>
+      Basado en el proyecto de <Link href={authorUrl}>Alicia Sykes</Link>
     </span>
   </StyledFooter>
   );
