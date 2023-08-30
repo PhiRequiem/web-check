@@ -1,39 +1,29 @@
-@font-face {
-  font-family: 'PTMono';
-  src: url('assets/fonts/PTMono-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'PTMono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #141d2b;
+  background: #470954;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#fancy-background { color: var(--background, #141d2b); }
 
 
 ::selection {
   background: var(--primary, #9fef00);
-  color: var(--background, #141d2b);
+  color: var(--background, #470954);
 }
 
 
 svg.rsm-svg {
-  background: #2a3240;
+  background: #470954;
   border-radius: 6px;
 }
 

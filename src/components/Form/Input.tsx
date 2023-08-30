@@ -28,7 +28,7 @@ const InputContainer = styled.div<StyledInputTypes>`
 `;
 
 const StyledInput = styled.input<StyledInputTypes>`
-  background: ${colors.background};
+  background: ${colors.backgroundDarker};
   color: ${colors.textColor};
   border: none;
   border-radius: 0.25rem;

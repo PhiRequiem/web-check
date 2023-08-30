@@ -7,7 +7,6 @@ import Input from 'components/Form/Input'
 import Button from 'components/Form/Button';
 import { StyledCard } from 'components/Form/Card';
 import Footer from 'components/misc/Footer';
-import FancyBackground from 'components/misc/FancyBackground';
 
 import docs from 'utils/docs';
 import colors from 'styles/colors';
@@ -95,7 +94,7 @@ const SiteFeaturesWrapper = styled(StyledCard)`
 `;
 
 const Home = (): JSX.Element => {
-  const defaultPlaceholder = 'e.g. https://duck.com/';
+  const defaultPlaceholder = 'ej. https://segudigital.org';
   const [userInput, setUserInput] = useState('');
   const [errorMsg, setErrMsg] = useState('');
   const [placeholder] = useState(defaultPlaceholder);
@@ -153,16 +152,15 @@ const Home = (): JSX.Element => {
 
   return (
     <HomeContainer>
-      <FancyBackground />
       <UserInputMain onSubmit={formSubmitEvent}>
         <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
-          <img width="64" src="/web-check.png" alt="Web Check Icon" />
-          Web Check
+          {/* <img width="64" src="/web-check.png" alt="Web Check Icon" /> */}
+          chequea.la 🔎
         </Heading>
         <Input
           id="user-input"
           value={userInput}
-          label="Enter a URL"
+          label="Ingresa la URL de tu medio u organización"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
@@ -171,19 +169,19 @@ const Home = (): JSX.Element => {
         />
         {/* <FindIpButton onClick={findIpAddress}>Or, find my IP</FindIpButton> */}
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
-        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>Analyze!</Button>
+        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>!Chequea mi web!</Button>
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>Supported Checks</Heading>
+          <Heading as="h2" size="small" color={colors.primary}>Estas son las revisiones que haremos 🤓</Heading>
           <ul>
             {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
             <li><a href="/about">+ more!</a></li>
           </ul>
         </div>
-        <div className="links">
+        {/* <div className="links">
           <a href="https://github.com/lissy93/web-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
-            <Button>View on GitHub</Button>
+            <Button>VerGitHub</Button>
           </a>
           <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="Deploy your own private or public instance of Web-Check to Netlify">
             <Button>Deploy your own</Button>
@@ -191,7 +189,7 @@ const Home = (): JSX.Element => {
           <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
             <Button>API Docs</Button>
           </a>
-        </div>
+        </div> */}
       </SiteFeaturesWrapper>
       <Footer isFixed={true} />
     </HomeContainer>
