@@ -57,7 +57,7 @@ const ViewRaw = (props: { everything: { id: string, result: any}[] }) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        title: 'web-check results',
+        title: 'chequeala-resultados',
         content: resultContent,
         readOnly: true,
         ttl: 3600,
@@ -78,27 +78,26 @@ const ViewRaw = (props: { everything: { id: string, result: any}[] }) => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'web-check-results.json';
+    link.download = 'chequeala-resultados.json';
     link.click();
     URL.revokeObjectURL(url);
   }
   return (
-    <Card heading="View / Download Raw Data" styles={CardStyles}>
+    <Card heading="Ver / Descargar datos en formato Raw" styles={CardStyles}>
       <div className="controls">
-        <Button onClick={handleDownload}>Download Results</Button>
-        <Button onClick={fetchResultsUrl}>{resultUrl ? 'Update Results' : 'View Results'}</Button>
-        { resultUrl && <Button onClick={() => setResultUrl('') }>Hide Results</Button> }
+        <Button onClick={handleDownload}>Descargar resultados</Button>
+        <Button onClick={fetchResultsUrl}>{resultUrl ? 'Actualizar resultados' : 'Ver resultados'}</Button>
+        { resultUrl && <Button onClick={() => setResultUrl('') }>Ocultar resultados</Button> }
       </div>
       { resultUrl && !error &&
       <>
         <StyledIframe title="Results, via JSON Hero" src={resultUrl} />
-        <small>Your results are available to view <a href={resultUrl}>here</a>.</small>
+        <small>Puede ver Sus resultados en pantalla completa  <a target='_blank' href={resultUrl}>aquí</a>.</small>
       </>
       }
       { error && <p className="error">{error}</p> }
       <small>
-        These are the raw results generated from your URL, and in JSON format.
-        You can import these into your own program, for further analysis.
+      Estos son los resultados sin procesar generados a partir de su URL y en formato JSON. Puede importarlos a su propio programa para su posterior análisis.
       </small>
     </Card>
   );

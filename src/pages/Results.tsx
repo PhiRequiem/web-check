@@ -17,7 +17,7 @@ import SelfScanMsg from 'components/misc/SelfScanMsg';
 import DocContent from 'components/misc/DocContent';
 import ProgressBar, { LoadingJob, LoadingState, initialJobs } from 'components/misc/ProgressBar';
 import ActionButtons from 'components/misc/ActionButtons';
-import AdditionalResources from 'components/misc/AdditionalResources';
+// import AdditionalResources from 'components/misc/AdditionalResources';
 import ViewRaw from 'components/misc/ViewRaw';
 
 import ServerLocationCard from 'components/Results/ServerLocation';
@@ -876,7 +876,7 @@ const Results = (): JSX.Element => {
               {tag}
           </button>
         ))}
-        {(tags.length > 0 || searchTerm.length > 0) && <span onClick={clearFilters} className="clear">Clear Filters</span> }
+        {(tags.length > 0 || searchTerm.length > 0) && <span onClick={clearFilters} className="clear">Borrar filtros</span> }
         </div>
         <div className="one-half">
         <span className="group-label">Search</span>
@@ -923,7 +923,7 @@ const Results = (): JSX.Element => {
           </Masonry>
       </ResultsContent>
       <ViewRaw everything={resultCardData} />
-      <AdditionalResources url={address} />
+      {/* <AdditionalResources url={address} /> */}
       <Footer />
       <Modal isOpen={modalOpen} closeModal={()=> setModalOpen(false)}>{modalContent}</Modal>
       <ToastContainer limit={3} draggablePercent={60} autoClose={2500} theme="dark" position="bottom-right" />

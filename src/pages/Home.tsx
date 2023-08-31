@@ -107,9 +107,9 @@ const Home = (): JSX.Element => {
     const addressType = determineAddressType(address);
   
     if (addressType === 'empt') {
-      setErrMsg('Field must not be empty');
+      setErrMsg('El campo no debe estar vacío 🥺');
     } else if (addressType === 'err') {
-      setErrMsg('Must be a valid URL, IPv4 or IPv6 Address');
+      setErrMsg('Debe ser una URL válida, dirección IPv4 o IPv6 😶');
     } else {
       // if the addressType is 'url' and address doesn't start with 'http://' or 'https://', prepend 'https://'
       if (addressType === 'url' && !/^https?:\/\//i.test(address)) {
