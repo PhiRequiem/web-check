@@ -92,7 +92,7 @@ const ViewRaw = (props: { everything: { id: string, result: any}[] }) => {
       { resultUrl && !error &&
       <>
         <StyledIframe title="Results, via JSON Hero" src={resultUrl} />
-        <small>Puede ver Sus resultados en pantalla completa  <a target='_blank' href={resultUrl}>aquí</a>.</small>
+        <small>Puede ver Sus resultados en pantalla completa  <a href={resultUrl}>aquí</a>.</small>
       </>
       }
       { error && <p className="error">{error}</p> }
