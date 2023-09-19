@@ -4,7 +4,7 @@ const colors = {
   primaryLighter: '#cff97a',
   textColor: '#B2CAF3',
   textColorSecondary: '#a4b1cd',
-  background: '#470954',
+  background: '##2596be',
   backgroundDarker: '#111927',
   backgroundLighter: '#1a2332',
   bgShadowColor: '#0f1620',
