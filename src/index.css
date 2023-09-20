@@ -7,7 +7,7 @@ body {
   font-family:  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #470954;
+  background: #2596be;
 }
 
 code {
@@ -17,13 +17,13 @@ code {
 
 
 ::selection {
-  background: var(--primary, #5c116b);
+  background: var(--primary, #2596be);
   color: var(--background, #470954);
 }
 
 
 svg.rsm-svg {
-  background: #470954;
+  background: #2596be;
   border-radius: 6px;
 }
 
